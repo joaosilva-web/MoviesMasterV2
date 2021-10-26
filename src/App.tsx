@@ -3,6 +3,7 @@ import GlobalStyle from "../styles/global";
 import { ThemeProvider } from "styled-components";
 import light from "../styles/themes/light";
 import dark from "../styles/themes/dark";
+import { Header } from "./components/Header";
 
 function App() {
   const [theme, setTheme] = useState(light);
@@ -16,7 +17,7 @@ function App() {
    <ThemeProvider theme={theme}>
       <div className="App">
         <GlobalStyle/>
-        <h1>Hello World</h1>
+        <Header toggleTheme={toggleTheme}/>
       </div>
    </ThemeProvider>
   )
