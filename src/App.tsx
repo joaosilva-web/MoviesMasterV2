@@ -13,7 +13,7 @@ function App() {
 
 
   return (
-   <ThemeProvider theme={light}>
+   <ThemeProvider theme={theme}>
       <div className="App">
         <GlobalStyle/>
         <h1>Hello World</h1>
